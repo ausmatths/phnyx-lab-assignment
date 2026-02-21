@@ -1,0 +1,16 @@
+services:
+  service1:
+    image: 219711034407.dkr.ecr.us-east-1.amazonaws.com/service1:latest
+    ports:
+      - "5000:5000"
+    environment:
+      - FLASK_ENV=production
+    restart: always
+
+  service2:
+    image: 219711034407.dkr.ecr.us-east-1.amazonaws.com/service2:latest
+    ports:
+      - "5001:5001"
+    environment:
+      - FLASK_ENV=production
+    restart: always
